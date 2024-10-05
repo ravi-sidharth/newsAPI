@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-container">
+        <nav class="flex">
+            <a href="#"><i onclick="reload()" class="fa-solid fa-house"></i></a>
+            <div>
+                <ul class="flex">
+                    <li class="hover-link list-text"id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link list-text"id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link list-text" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" id="news-input" placeholder="Enter the news name">
+                <button id="search-button">Search</button>
+            </div>
+        </nav>
+        <main>
+            <div class="container flex" id="card-container">
+
+            </div>
+
+        </main>
+    </div>
+    
+     
+        <template id="news-card-template">
+            <div class="box card hover">
+                <img id="news-image" src="./assets/news-logo.jpg" alt="News Image">
+                <h3 id="news-header">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source">End Date 26/8/2024</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat? Minus
+                    assumenda quam autem architecto!</p>
+            </div>
+
+            <!-- <div class="box">
+                <img id="news-image" src="./assets/news-logo.jpg" alt="News Image">
+                <h3 id="news-header">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source">End Date 26/8/2024</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat? Minus
+                    assumenda quam autem architecto!</p>
+            </div>
+            <div class="box">
+                <img id="news-image" src="./assets/news-logo.jpg" alt="News Image">
+                <h3 id="news-header">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source">End Date 26/8/2024</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat? Minus
+                    assumenda quam autem architecto!</p>
+            </div>
+            <div class="box">
+                <img id="news-image" src="./assets/news-logo.jpg" alt="News Image">
+                <h3 id="news-header">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source">End Date 26/8/2024</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat? Minus
+                    assumenda quam autem architecto!</p>
+            </div>
+            <div class="box">
+                <img id="news-image" src="./assets/news-logo.jpg" alt="News Image">
+                <h3 id="news-header">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source">End Date 26/8/2024</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat? Minus
+                    assumenda quam autem architecto!</p>
+            </div>
+            <div class="box">
+                <img id="news-image" src="./assets/news-logo.jpg" alt="News Image">
+                <h3 id="news-header">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source">End Date 26/8/2024</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat? Minus
+                    assumenda quam autem architecto!</p>
+            </div>
+            <div class="box">
+                <img id="news-image" src="./assets/news-logo.jpg" alt="News Image">
+                <h3 id="news-header">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source">End Date 26/8/2024</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat? Minus
+                    assumenda quam autem architecto!</p>
+            </div>
+            <div class="box">
+                <img id="news-image" src="./assets/news-logo.jpg" alt="News Image">
+                <h3 id="news-header">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source">End Date 26/8/2024</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat? Minus
+                    assumenda quam autem architecto!</p>
+            </div>
+            <div class="box">
+                <img id="news-image" src="./assets/news-logo.jpg" alt="News Image">
+                <h3 id="news-header">Lorem ipsum dolor sit.</h3>
+                <h6 id="news-source">End Date 26/8/2024</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, repellat? Minus
+                    assumenda quam autem architecto!</p>
+            </div> -->
+        </template>
+    
+   
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
