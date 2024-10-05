@@ -58,9 +58,6 @@ ul {
     color: white;
 }
 
-/* .hover-link:hover {
-    color: red;
-} */
 .hover-link:active{
     color: blue;
     cursor: pointer;
@@ -118,4 +115,43 @@ h3,p {
 
 h6 {
     color: grey;
+}
+
+@media (max-width:1024px) {
+    .box {
+        width: 470px;    
+    }
+}
+
+@media (max-width:768px) {
+    .box {
+        width: 350px;    
+    }
+    #news-type {
+        display:none;   
+    }
+
+}
+
+@media(max-width:431px) {
+    #news-type {
+        display:none;   
+    }
+    .box {
+        width:425px;    
+    }
+    .flex {
+        justify-content: space-between;
+    }
+
+    .search-bar input{
+        width: 150px;
+        padding-inline: .5rem;
+    }
+
+    .search-bar button{
+        width: 70px;
+        padding-inline: .5rem;
+    }
+    
 }
