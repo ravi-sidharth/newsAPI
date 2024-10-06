@@ -29,7 +29,6 @@ function bindData(articles) {
     });
 }
 
-
 function fillDataInCard(cardClone,article) {
     const newsImg = cardClone.querySelector('img');
     const newsTitle = cardClone.querySelector('h3');
@@ -65,5 +64,6 @@ const searchBtn = document.getElementById('search-button')
 searchBtn.addEventListener('click',()=> {
     const query = newsInput.value;
     getNews(query);
-    currentActiveNav?.classList.remove('active');
+    
 })
+
