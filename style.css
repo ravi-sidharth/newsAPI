@@ -30,7 +30,7 @@ nav {
     position:sticky;
     top: 0;
     margin-bottom: 2rem;
-    box-shadow: 0 0 4px #183b56;
+    box-shadow: 0 0 4px grey;
     background-color: #1F1E1C;
 }
 nav a i {
@@ -42,7 +42,6 @@ nav a i {
 .main-container {
     max-width: 1300px;
     margin-inline: auto;
-    border: 2px solid red;
 }
 
 .flex {
@@ -82,12 +81,11 @@ ul {
     height: 500px;
     overflow: hidden;
     transition: all 0.3s ease;
-    border: 2px solid red;
     cursor: pointer;
     
 } 
 .box:hover {
-    box-shadow: 1px 1px 8px #183b56;
+    box-shadow: 1px 1px 8px grey;
     transform: translateY(-2px);
 }          
 .box img {

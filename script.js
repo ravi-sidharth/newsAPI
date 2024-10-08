@@ -10,10 +10,17 @@ function reload() {
 }
 
 async function getNews(query) {
-    let res = await fetch(`${url}q=${query}&apiKey=${apiKey}`)
-    let data = await res.json()
-     bindData(data.articles)
-    // console.log(data.articles)
+    try {
+        let res = await fetch(`${url}q=${query}&apiKey=${apiKey}`)
+        let data = await res.json()
+        // bindData(data.articles.slice(0,10))
+        bindData(data.articles)
+
+    } catch (err) {
+        document.querySelector('body').innerHTML=`404 Page Not Found`
+        console.log("ERROR:",err)
+    }
+    
 }
 
 function bindData(articles) {
@@ -64,6 +71,7 @@ const searchBtn = document.getElementById('search-button')
 searchBtn.addEventListener('click',()=> {
     const query = newsInput.value;
     getNews(query);
-    
+    currentActiveNav?.classList.remove('active');
 })
+
 
